@@ -1,0 +1,19 @@
+{
+    "/modules/fullscreen/fullscreen.js": "/modules/fullscreen/fullscreen.js",
+    "/modules/fullscreen/fullscreen-app.js": "/modules/fullscreen/fullscreen-app.js",
+    "/modules/waves/waves.js": "/modules/waves/waves.js",
+    "/css/admin/core.css": "/css/admin/core.css",
+    "/css/admin/custom.css": "/css/admin/custom.css",
+    "/css/admin/style.css": "/css/admin/style.css",
+    "/css/admin/theme/accent.css": "/css/admin/theme/accent.css",
+    "/css/admin/theme/danger.css": "/css/admin/theme/danger.css",
+    "/css/admin/theme/info.css": "/css/admin/theme/info.css",
+    "/css/admin/theme/primary.css": "/css/admin/theme/primary.css",
+    "/css/admin/theme/success.css": "/css/admin/theme/success.css",
+    "/css/admin/theme/warn.css": "/css/admin/theme/warn.css",
+    "/css/admin/theme/warning.css": "/css/admin/theme/warning.css",
+    "/modules/waves/waves.css": "/modules/waves/waves.css",
+    "/js/admin/core.js": "/js/admin/core.js",
+    "/js/admin/app.js": "/js/admin/app.js",
+    "/modules/waves/waves-app.js": "/modules/waves/waves-app.js"
+}

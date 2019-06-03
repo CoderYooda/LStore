@@ -12,5 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('public.welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+Route::group(['prefix' => '/admin'], function () {
+    Route::get('/dashboard', 'admin\common\DashBoardController@index')->name('Dashboard');
 });
