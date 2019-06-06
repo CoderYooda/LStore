@@ -1,7 +1,5 @@
 {
-    "/modules/fullscreen/fullscreen.js": "/modules/fullscreen/fullscreen.js",
-    "/modules/fullscreen/fullscreen-app.js": "/modules/fullscreen/fullscreen-app.js",
-    "/modules/waves/waves.js": "/modules/waves/waves.js",
+    "/js/modules/bootstrap-table.js": "/js/modules/bootstrap-table.js",
     "/css/admin/core.css": "/css/admin/core.css",
     "/css/admin/custom.css": "/css/admin/custom.css",
     "/css/admin/style.css": "/css/admin/style.css",
@@ -12,8 +10,21 @@
     "/css/admin/theme/success.css": "/css/admin/theme/success.css",
     "/css/admin/theme/warn.css": "/css/admin/theme/warn.css",
     "/css/admin/theme/warning.css": "/css/admin/theme/warning.css",
-    "/modules/waves/waves.css": "/modules/waves/waves.css",
+    "/js/modules/chartjs.js": "/js/modules/chartjs.js",
+    "/js/modules/datetimepicker.js": "/js/modules/datetimepicker.js",
+    "/js/modules/fullcalendar.js": "/js/modules/fullcalendar.js",
+    "/js/modules/fullscreen.js": "/js/modules/fullscreen.js",
+    "/js/modules/jquery.chart.js": "/js/modules/jquery.chart.js",
+    "/js/modules/jquery.html5sortable.js": "/js/modules/jquery.html5sortable.js",
+    "/js/modules/jquery.peity.tooltip.js": "/js/modules/jquery.peity.tooltip.js",
+    "/js/modules/jquery.scrollreveal.js": "/js/modules/jquery.scrollreveal.js",
+    "/js/modules/jqvmap.js": "/js/modules/jqvmap.js",
+    "/js/modules/notie.js": "/js/modules/notie.js",
+    "/js/modules/select2.js": "/js/modules/select2.js",
+    "/js/modules/sortable.js": "/js/modules/sortable.js",
+    "/js/modules/tableExport.min.js": "/js/modules/tableExport.min.js",
+    "/js/modules/waves.js": "/js/modules/waves.js",
     "/js/admin/core.js": "/js/admin/core.js",
     "/js/admin/app.js": "/js/admin/app.js",
-    "/modules/waves/waves-app.js": "/modules/waves/waves-app.js"
+    "/modules/chart.js": "/modules/chart.js"
 }

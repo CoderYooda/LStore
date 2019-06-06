@@ -10,7 +10,7 @@
             <div class="content-header" id="content-header"></div>
         </div>
         <div class="content-main " id="content-main">
-            <div class="padding" data-plugin="waves">
+            <div data-plugin="waves">
                 @yield('content')
             </div>
             <div class="content-footer white " id="content-footer">

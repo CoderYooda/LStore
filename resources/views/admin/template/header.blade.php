@@ -15,7 +15,7 @@
                       fill="#fff" class="" />
             </svg>
             <img src="../assets/images/logo.png" alt="." class="hide">
-            <span class="hidden-folded d-inline">Apply</span>
+            <span class="hidden-folded d-inline">{{env('APP_NAME', 'Laravel')}}</span>
         </a>
         <!-- / brand -->
         <ul class="nav flex-row order-lg-2">

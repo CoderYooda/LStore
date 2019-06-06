@@ -1,20 +1,8 @@
 const mix = require('laravel-mix');
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
-
 mix.sass('resources/sass/admin/core.scss', 'public/css/admin')
     .sass('resources/sass/admin/custom.scss', 'public/css/admin')
     .sass('resources/sass/admin/style.scss', 'public/css/admin')
-
     .sass('resources/sass/admin/theme/accent.scss', 'public/css/admin/theme')
     .sass('resources/sass/admin/theme/danger.scss', 'public/css/admin/theme')
     .sass('resources/sass/admin/theme/info.scss', 'public/css/admin/theme')
@@ -41,12 +29,31 @@ mix.sass('resources/sass/admin/core.scss', 'public/css/admin')
         'resources/js/admin/app.js',
     ], 'public/js/admin/app.js');
 
-//modules
-mix.sass('resources/modules/waves/waves.scss', 'public/modules/waves')
-    .js('resources/modules/waves/waves.js', 'public/modules/waves')
-    .scripts([
-    'resources/modules/waves/waves-app.js',
-], 'public/modules/waves/waves-app.js');
+//node-modules
+mix.copyDirectory('resources/api', 'public/api')
+    .copyDirectory('node_modules/summernote', 'public/modules/summernote')
+    .copyDirectory('node_modules/parsleyjs', 'public/modules/parsleyjs')
+    .copyDirectory('node_modules/node-waves', 'public/modules/node-waves')
+    .copyDirectory('node_modules/select2', 'public/modules/select2')
+    .copyDirectory('node_modules/jquery-fullscreen-plugin', 'public/modules/jquery-fullscreen-plugin')
+    .copyDirectory('node_modules/peity', 'public/modules/peity')
+    .copyDirectory('node_modules/jqvmap', 'public/modules/jqvmap')
+    .copyDirectory('node_modules/chart.js', 'public/modules/chart.js')
+    .copyDirectory('node_modules/moment', 'public/modules/moment');
 
-mix.js('resources/modules/fullscreen/fullscreen.js', 'public/modules/fullscreen')
-    .js('resources/modules/fullscreen/fullscreen-app.js', 'public/modules/fullscreen');
+//plugins
+mix.js('resources/js/modules/bootstrap-table.js', 'public/js/modules')
+    .js('resources/js/modules/chartjs.js', 'public/js/modules')
+    .js('resources/js/modules/datetimepicker.js', 'public/js/modules')
+    .js('resources/js/modules/fullcalendar.js', 'public/js/modules')
+    .js('resources/js/modules/fullscreen.js', 'public/js/modules')
+    .js('resources/js/modules/jquery.chart.js', 'public/js/modules')
+    .js('resources/js/modules/jquery.html5sortable.js', 'public/js/modules')
+    .js('resources/js/modules/jquery.peity.tooltip.js', 'public/js/modules')
+    .js('resources/js/modules/jquery.scrollreveal.js', 'public/js/modules')
+    .js('resources/js/modules/jqvmap.js', 'public/js/modules')
+    .js('resources/js/modules/notie.js', 'public/js/modules')
+    .js('resources/js/modules/select2.js', 'public/js/modules')
+    .js('resources/js/modules/sortable.js', 'public/js/modules')
+    .js('resources/js/modules/tableExport.min.js', 'public/js/modules')
+    .js('resources/js/modules/waves.js', 'public/js/modules');

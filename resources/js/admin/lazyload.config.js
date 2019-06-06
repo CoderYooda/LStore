@@ -1,123 +1,123 @@
 // lazyload config
 var MODULE_CONFIG = {
     chat:           [
-                      '/node_modules/list.js/dist/list.js',
-                      '/node_modules/notie/dist/notie.min.js',
-                      '../assets/js/plugins/notie.js',
+                      '/modules/list.js/dist/list.js',
+                      '/modules/notie/dist/notie.min.js',
+                      '/js/modules/notie.js',
                       '../assets/js/app/chat.js'
                     ],
     mail:           [
-                      '/node_modules/list.js/dist/list.js',
-                      '/node_modules/notie/dist/notie.min.js',
-                      '../assets/js/plugins/notie.js',
+                      '/modules/list.js/dist/list.js',
+                      '/modules/notie/dist/notie.min.js',
+                      '/js/modules/notie.js',
                       '../assets/js/app/mail.js'
                     ],
     user:           [
-                      '/node_modules/list.js/dist/list.js',
-                      '/node_modules/notie/dist/notie.min.js',
-                      '../assets/js/plugins/notie.js',
+                      '/modules/list.js/dist/list.js',
+                      '/modules/notie/dist/notie.min.js',
+                      '/js/modules/notie.js',
                       '../assets/js/app/user.js'
                     ],
-    fullscreen:     [
-                        '/modules/fullscreen/fullscreen.js',
-                        '/modules/fullscreen/fullscreen-app.js'
+    fullscreen:     [ //ready
+                        '/modules/jquery-fullscreen-plugin/jquery.fullscreen-min.js',
+                        '/js/modules/fullscreen.js'
                     ],
     jscroll:        [
-                      '/node_modules/jscroll/jquery.jscroll.min.js'
+                      '/modules/jscroll/jquery.jscroll.min.js'
                     ],
     stick_in_parent:[
-                      '/node_modules/sticky-kit/jquery.sticky-kit.min.js'
+                      '/modules/sticky-kit/jquery.sticky-kit.min.js'
                     ],
     scrollreveal:   [
-                      '/node_modules/scrollreveal/dist/scrollreveal.min.js',
-                      '../assets/js/plugins/jquery.scrollreveal.js'
+                      '/modules/scrollreveal/dist/scrollreveal.min.js',
+                      '/js/modules/jquery.scrollreveal.js'
                     ],
     owlCarousel:    [
-                      '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
-                      '/node_modules/owl.carousel/dist/assets/owl.theme.css',
-                      '/node_modules/owl.carousel/dist/owl.carousel.min.js'
+                      '/modules/owl.carousel/dist/assets/owl.carousel.min.css',
+                      '/modules/owl.carousel/dist/assets/owl.theme.css',
+                      '/modules/owl.carousel/dist/owl.carousel.min.js'
                     ],
     html5sortable:  [
-                      '/node_modules/html5sortable/dist/html.sortable.min.js',
-                      '../assets/js/plugins/jquery.html5sortable.js',
-                      '../assets/js/plugins/sortable.js'
+                      '/modules/html5sortable/dist/html.sortable.min.js',
+                      '/js/modules/jquery.html5sortable.js',
+                      '/js/modules/sortable.js'
                     ],
     easyPieChart:   [
-                      '/node_modules/easy-pie-chart/dist/jquery.easypiechart.min.js'
+                      '/modules/easy-pie-chart/dist/jquery.easypiechart.min.js'
                     ],
-    peity:          [
-                      '/node_modules/peity/jquery.peity.js',
-                      '../assets/js/plugins/jquery.peity.tooltip.js',
+    peity:          [ //Ready
+                        '/modules/peity/jquery.peity.js',
+                        '/js/modules/jquery.peity.tooltip.js',
                     ],
-    chart:          [
-                      '/node_modules/moment/min/moment-with-locales.min.js',
-                      '/node_modules/chart.js/dist/Chart.min.js',
-                      '../assets/js/plugins/jquery.chart.js',
-                      '../assets/js/plugins/chartjs.js'
+    chart:          [ //Ready
+                        '/modules/moment/min/moment-with-locales.min.js',
+                        '/modules/chart.js/dist/Chart.min.js',
+                        '/js/modules/jquery.chart.js',
+                        '/js/modules/chartjs.js'
                     ],
     dataTable:      [
-                      '/node_modules/datatables/media/js/jquery.dataTables.min.js',
-                      '/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js',
-                      '/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css',
-                      '../assets/js/plugins/datatable.js'
+                      '/modules/datatables/media/js/jquery.dataTables.min.js',
+                      '/modules/datatables.net-bs4/js/dataTables.bootstrap4.js',
+                      '/modules/datatables.net-bs4/css/dataTables.bootstrap4.css',
+                      '/js/modules/datatable.js'
                     ],
     bootstrapTable: [
-                      '/node_modules/bootstrap-table/dist/bootstrap-table.min.css',
-                      '/node_modules/bootstrap-table/dist/bootstrap-table.min.js',
-                      '/node_modules/bootstrap-table/dist/extensions/export/bootstrap-table-export.min.js',
-                      '/node_modules/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.min.js',
-                      '../assets/js/plugins/tableExport.min.js',
-                      '../assets/js/plugins/bootstrap-table.js'
+                      '/modules/bootstrap-table/dist/bootstrap-table.min.css',
+                      '/modules/bootstrap-table/dist/bootstrap-table.min.js',
+                      '/modules/bootstrap-table/dist/extensions/export/bootstrap-table-export.min.js',
+                      '/modules/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.min.js',
+                      '/js/modules/tableExport.min.js',
+                      '/js/modules/bootstrap-table.js'
                     ],
     bootstrapWizard:[
-                      '/node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js'
+                      '/modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js'
                     ],
     dropzone:       [
-                      '/node_modules/dropzone/dist/min/dropzone.min.js',
-                      '/node_modules/dropzone/dist/min/dropzone.min.css'
+                      '/modules/dropzone/dist/min/dropzone.min.js',
+                      '/modules/dropzone/dist/min/dropzone.min.css'
                     ],
     datetimepicker: [
-                      '/node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css',
-                      '/node_modules/moment/min/moment-with-locales.min.js',
-                      '/node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js',
-                      '../assets/js/plugins/datetimepicker.js'
+                      '/modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css',
+                      '/modules/moment/min/moment-with-locales.min.js',
+                      '/modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js',
+                      '/js/modules/datetimepicker.js'
                     ],
     datepicker:     [
                       "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
                       "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
                     ],
     fullCalendar:   [
-                      '/node_modules/moment/min/moment-with-locales.min.js',
-                      '/node_modules/fullcalendar/dist/fullcalendar.min.js',
-                      '/node_modules/fullcalendar/dist/fullcalendar.min.css',
-                      '../assets/js/plugins/fullcalendar.js'
+                      '/modules/moment/min/moment-with-locales.min.js',
+                      '/modules/fullcalendar/dist/fullcalendar.min.js',
+                      '/modules/fullcalendar/dist/fullcalendar.min.css',
+                      '/js/modules/fullcalendar.js'
                     ],
-    parsley:        [
-                      '/node_modules/parsleyjs/dist/parsley.min.js'
+    parsley:        [ //Ready
+                      '/modules/parsleyjs/dist/parsley.min.js'
                     ],
-    select2:        [
-                      '/node_modules/select2/dist/css/select2.min.css',
-                      '/node_modules/select2/dist/js/select2.min.js',
-                      '../assets/js/plugins/select2.js'
+    select2:        [ //Ready
+                      '/modules/select2/dist/css/select2.min.css',
+                      '/modules/select2/dist/js/select2.min.js',
+                      '/js/modules/select2.js'
                     ],
-    summernote:     [
-                      '/node_modules/summernote/dist/summernote.css',
-                      '/node_modules/summernote/dist/summernote-bs4.css',
-                      '/node_modules/summernote/dist/summernote.min.js',
-                      '/node_modules/summernote/dist/summernote-bs4.min.js'
+    summernote:     [ //Ready
+                      '/modules/summernote/dist/summernote.css',
+                      '/modules/summernote/dist/summernote-bs4.css',
+                      '/modules/summernote/dist/summernote.min.js',
+                      '/modules/summernote/dist/summernote-bs4.min.js'
                     ],
-    vectorMap:      [
-                      '/node_modules/jqvmap/dist/jqvmap.min.css',
-                      '/node_modules/jqvmap/dist/jquery.vmap.js',
-                      '/node_modules/jqvmap/dist/maps/jquery.vmap.world.js',
-                      '/node_modules/jqvmap/dist/maps/jquery.vmap.usa.js',
-                      '/node_modules/jqvmap/dist/maps/jquery.vmap.france.js',
-                      '../assets/js/plugins/jqvmap.js'
+    vectorMap:      [ //Ready
+                      '/modules/jqvmap/dist/jqvmap.min.css',
+                      '/modules/jqvmap/dist/jquery.vmap.js',
+                      '/modules/jqvmap/dist/maps/jquery.vmap.world.js',
+                      '/modules/jqvmap/dist/maps/jquery.vmap.usa.js',
+                      '/modules/jqvmap/dist/maps/jquery.vmap.france.js',
+                      '/js/modules/jqvmap.js'
                     ],
-    waves:          [
-                      '/modules/waves/waves.css',
-                      '/modules/waves/waves.js',
-                      '/modules/waves/waves-app.js'
+    waves:          [ // Ready
+                        '/modules/node-waves/dist/waves.min.css',
+                        '/modules/node-waves/dist/waves.min.js',
+                        '/js/modules/waves.js'
                     ]
   };
 
