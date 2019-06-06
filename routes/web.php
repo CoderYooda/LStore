@@ -24,4 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => '/admin'], function () {
     Route::get('/dashboard', 'admin\common\DashBoardController@index')->name('Dashboard');
+
+    Route::get('/settings', 'admin\setting\SettingController@showSettingPage')->name('Settings');
 });

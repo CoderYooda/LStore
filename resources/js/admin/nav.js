@@ -21,11 +21,15 @@
 
   // init the active class when page reload
   function init(){
-    var url = window.location.pathname.split( '/' );
-    if(url.length > 0) url = url[url.length - 1];
+    var url = window.location.pathname;
+    //if(url.length > 0) url = url[url.length - 1];
     $('#aside .active').removeClass('active');
     $('#aside a').filter( function() {
-      return url == $(this).attr('href');
+        if($(this).attr('href') != undefined){
+            return $(this).attr('href').toString().includes(url);
+        } else {
+            return false;
+        }
     }).parents('li').addClass( 'active' );
   }
   

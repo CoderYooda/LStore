@@ -2,9 +2,9 @@
 <html lang="ru">
 @include('admin.template.head')
 <body>
-@yield('header')
+{!! \App\Http\Controllers\admin\common\TemplateController::getHeader() !!}
 <div class="app" id="app">
-    @yield('aside')
+    {!! \App\Http\Controllers\admin\common\TemplateController::getAside() !!}
     <div id="content" class="app-content box-shadow-3" role="main">
         <div class="hide">
             <div class="content-header" id="content-header"></div>

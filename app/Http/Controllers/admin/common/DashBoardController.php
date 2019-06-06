@@ -7,12 +7,8 @@ use App\Http\Controllers\Controller;
 
 class DashBoardController extends Controller
 {
-    public function index(){
-
-        $header = TemplateController::getHeader();
-
-        $aside = TemplateController::getAside();
-
-        return view('admin.common.dashboard', compact('header', 'aside'));
+    public function index()
+    {
+        return view('admin.common.dashboard');
     }
 }

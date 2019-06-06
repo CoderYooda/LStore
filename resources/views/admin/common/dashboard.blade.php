@@ -1,19 +1,10 @@
 @extends('admin.layout.main')
 
-@section('header')
-    {!! $header !!}
-@endsection
-
-@section('aside')
-    {!! $aside !!}
-@endsection
-
 @section('content')
-
     <div>
         <div class="p-3 light lt box-shadow-0 d-flex">
             <div class="flex">
-                <h1 class="text-md mb-1 _400">Welcome back, John.</h1>
+                <h1 class="text-md mb-1 _400">С возвращением, Сергей</h1>
                 <small class="text-muted">Last logged in: 03:00 21, July</small>
             </div>
             <div>
