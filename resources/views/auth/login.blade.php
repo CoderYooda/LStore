@@ -17,7 +17,8 @@
                 <div class="my-3 text-sm">
                     OR
                 </div>
-                <form name="form">
+                <form name="form" method="POST" action="{{ route('login') }}">
+                    @csrf
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder="Email" required>
                     </div>
@@ -37,7 +38,7 @@
                 </div>
                 <div>
                     Do not have an account?
-                    <a href="signup.html" class="text-primary _600">Sign up</a>
+                    <a href="{{route('register')}}" class="text-primary _600">Sign up</a>
                 </div>
             </div>
         </div>
