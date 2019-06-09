@@ -39,12 +39,14 @@ mix.copyDirectory('resources/api', 'public/api')
     .copyDirectory('node_modules/peity', 'public/modules/peity')
     .copyDirectory('node_modules/jqvmap', 'public/modules/jqvmap')
     .copyDirectory('node_modules/chart.js', 'public/modules/chart.js')
+    .copyDirectory('node_modules/bootstrap-datepicker', 'public/modules/bootstrap-datepicker')
     .copyDirectory('node_modules/moment', 'public/modules/moment');
 
 //plugins
 mix.js('resources/js/modules/bootstrap-table.js', 'public/js/modules')
     .js('resources/js/modules/chartjs.js', 'public/js/modules')
     .js('resources/js/modules/datetimepicker.js', 'public/js/modules')
+    .js('resources/js/modules/datepicker.js', 'public/js/modules')
     .js('resources/js/modules/fullcalendar.js', 'public/js/modules')
     .js('resources/js/modules/fullscreen.js', 'public/js/modules')
     .js('resources/js/modules/jquery.chart.js', 'public/js/modules')

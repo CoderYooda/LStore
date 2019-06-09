@@ -11,6 +11,7 @@
     "/css/admin/theme/warn.css": "/css/admin/theme/warn.css",
     "/css/admin/theme/warning.css": "/css/admin/theme/warning.css",
     "/js/modules/chartjs.js": "/js/modules/chartjs.js",
+    "/js/modules/datepicker.js": "/js/modules/datepicker.js",
     "/js/modules/datetimepicker.js": "/js/modules/datetimepicker.js",
     "/js/modules/fullcalendar.js": "/js/modules/fullcalendar.js",
     "/js/modules/fullscreen.js": "/js/modules/fullscreen.js",

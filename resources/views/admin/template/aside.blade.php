@@ -26,19 +26,19 @@
                         <li>
                             <a href="{{ route('Dashboard') }}">
                                 <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
-                                <span class="nav-text">Управление</span>
+                                <span class="nav-text">Панель состояния</span>
                             </a>
                         </li>
                         <li>
                             <a>
                                 <span class="nav-caret"><i class="fa fa-caret-down"></i></span>
                                 <span class="nav-icon"><i class="fa fa-align-left"></i></span>
-                                <span class="nav-text">Layout</span>
+                                <span class="nav-text">Каталог</span>
                             </a>
                             <ul class="nav-sub">
                                 <li>
                                     <a href="layout.header.html">
-                                        <span class="nav-text">Header</span>
+                                        <span class="nav-text">Товары</span>
                                     </a>
                                 </li>
                                 <li>

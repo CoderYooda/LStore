@@ -83,8 +83,9 @@ var MODULE_CONFIG = {
                       '/js/modules/datetimepicker.js'
                     ],
     datepicker:     [
-                      "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
-                      "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
+                      "/modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
+                      "/modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
+                      "/js/modules/datepicker.js"
                     ],
     fullCalendar:   [
                       '/modules/moment/min/moment-with-locales.min.js',
