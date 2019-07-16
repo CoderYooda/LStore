@@ -99,6 +99,7 @@ var MODULE_CONFIG = {
     select2:        [ //Ready
                       '/modules/select2/dist/css/select2.min.css',
                       '/modules/select2/dist/js/select2.min.js',
+                      '/modules/select2/dist/js/i18n/ru.js',
                       '/js/modules/select2.js'
                     ],
     summernote:     [ //Ready

@@ -1,5 +1,5 @@
 <ul class="nav nav-sm nav-pills nav-active-primary mb-3 clearfix">
-    @foreach($languages as $language)
+    @foreach($parametrs->languages as $language)
     <li class="nav-item">
         <a class="nav-link @if( $loop->index == 0 ) active @endif"
            href="#" data-toggle="tab"
@@ -10,7 +10,7 @@
     @endforeach
 </ul>
 <div class="tab-content">
-    @foreach($languages as $language)
+    @foreach($parametrs->languages as $language)
         <div class="tab-pane fade @if( $loop->index == 0 ) active  show @endif" id="language{{ $language->language_id }}">
             <div class="box mb-0">
                 <div class="box-body">

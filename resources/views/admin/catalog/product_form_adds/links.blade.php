@@ -1,28 +1,29 @@
 <div class="box mb-0">
     <div class="box-body">
-
-            <div class="form-row">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <button type="button" class="btn white">Action</button>
-                        <button type="button" class="btn white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div role="separator" class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Производитель</label>
+                    <select id="manufacturers" data-plugin="select2" data-option="{width: '100%'}" class="form-control">
+                        <option value="null">Не выбрано</option>
+                        @foreach($parametrs->manufacturers as $manufacturer)
+                            <option value="{{ $manufacturer->id }}">{{ $manufacturer->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Основная категория</label>
+                    <select id="main_category" data-plugin="select2" data-option="{width: '100%'}" class="form-control">
+                        <option value="null">Не выбрано</option>
+                        @foreach($parametrs->manufacturers as $manufacturer)
+                            <option value="{{ $manufacturer->id }}">{{ $manufacturer->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
             </div>
+        </div>
             <div class="form-group">
                 <label for="inputAddress2">Address 2</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
