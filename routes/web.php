@@ -30,4 +30,7 @@ Route::group(['prefix' => '/admin'], function () {
     Route::get('/catalog/product', 'admin\catalog\ProductController@getList')->name('Products');
     Route::get('/catalog/product/{id}/edit', 'admin\catalog\ProductController@getForm')->name('Product_Edit');
     Route::post('/catalog/product/store', 'admin\catalog\ProductController@store')->name('Product_Store');
+
+    Route::get('/settings/store', 'admin\setting\StoreController@index')->name('Store');
+    Route::get('/settings/store/add', 'admin\setting\StoreController@getForm')->name('AddStore');
 });

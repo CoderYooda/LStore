@@ -17,8 +17,8 @@
                     <label>Основная категория</label>
                     <select id="main_category" data-plugin="select2" data-option="{width: '100%'}" class="form-control">
                         <option value="null">Не выбрано</option>
-                        @foreach($parametrs->manufacturers as $manufacturer)
-                            <option value="{{ $manufacturer->id }}">{{ $manufacturer->name }}</option>
+                        @foreach($parametrs->categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
                     </select>
                 </div>

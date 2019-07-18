@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin\catalog;
 
+use App\Model\Catalog\Category;
 use App\Model\Catalog\Manufacturer;
 use App\Model\Localisation\Language;
 use Illuminate\Http\Request;
@@ -13,14 +14,14 @@ class ProductController extends Controller
     # Список редактируемых товаров
     public function getList()
     {
-        return view('admin.catalog.product_list');
+        return view('admin.catalog.product.list');
     }
 
     # Форма редактирования товара
     public function getForm()
     {
         $parametrs = self::collectProductParams();
-        return view('admin.catalog.product_form', compact('parametrs'));
+        return view('admin.catalog.product.form', compact('parametrs'));
     }
 
     # Сохранить форму с товаром в базу
@@ -35,6 +36,7 @@ class ProductController extends Controller
         $collection = new stdClass();
         $collection->languages = Language::all();
         $collection->manufacturers = Manufacturer::all();
+        $collection->categories = Category::asList();
 
         return $collection;
     }

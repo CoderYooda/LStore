@@ -66,37 +66,37 @@
         <div class="padding">
             <div class="tab-content">
                 <div class="tab-pane fade active show" id="tab_base">
-                    @include('admin.catalog.product_form_adds.base')
+                    @include('admin.catalog.product.form_adds.base')
                 </div>
                 <div class="tab-pane fade" id="tab_data">
-                    @include('admin.catalog.product_form_adds.data')
+                    @include('admin.catalog.product.form_adds.data')
                 </div>
                 <div class="tab-pane fade" id="tab_links">
-                    @include('admin.catalog.product_form_adds.links')
+                    @include('admin.catalog.product.form_adds.links')
                 </div>
                 <div class="tab-pane fade" id="tab_specifications">
-                    @include('admin.catalog.product_form_adds.specifications')
+                    @include('admin.catalog.product.form_adds.specifications')
                 </div>
                 <div class="tab-pane fade" id="tab_options">
-                    @include('admin.catalog.product_form_adds.options')
+                    @include('admin.catalog.product.form_adds.options')
                 </div>
                 <div class="tab-pane fade" id="tab_periodicity">
-                    @include('admin.catalog.product_form_adds.periodicity')
+                    @include('admin.catalog.product.form_adds.periodicity')
                 </div>
                 <div class="tab-pane fade" id="tab_discount">
-                    @include('admin.catalog.product_form_adds.discount')
+                    @include('admin.catalog.product.form_adds.discount')
                 </div>
                 <div class="tab-pane fade" id="tab_stock">
-                    @include('admin.catalog.product_form_adds.stock')
+                    @include('admin.catalog.product.form_adds.stock')
                 </div>
                 <div class="tab-pane fade" id="tab_images">
-                    @include('admin.catalog.product_form_adds.images')
+                    @include('admin.catalog.product.form_adds.images')
                 </div>
                 <div class="tab-pane fade" id="tab_bonuses">
-                    @include('admin.catalog.product_form_adds.bonuses')
+                    @include('admin.catalog.product.form_adds.bonuses')
                 </div>
                 <div class="tab-pane fade" id="tab_seo">
-                    @include('admin.catalog.product_form_adds.seo')
+                    @include('admin.catalog.product.form_adds.seo')
                 </div>
             </div>
         </div>

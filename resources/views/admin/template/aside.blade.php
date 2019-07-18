@@ -77,6 +77,35 @@
                                 <span class="nav-text">Настройки</span>
                             </a>
                         </li>
+                        <li>
+                            <a>
+                                <span class="nav-caret"><i class="fa fa-caret-down"></i></span>
+                                <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+                                <span class="nav-text">Настройки</span>
+                            </a>
+                            <ul class="nav-sub">
+                                <li>
+                                    <a href="{{ route('Store') }}">
+                                        <span class="nav-text">Магазины</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="layout.sidenav.html">
+                                        <span class="nav-text">Sidenav</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="layout.aside.html">
+                                        <span class="nav-text">Aside</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="layout.flex.html">
+                                        <span class="nav-text">Flex</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="pb-2 hidden-folded"></li>
                     </ul>
                 </div>
