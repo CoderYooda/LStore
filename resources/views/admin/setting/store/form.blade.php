@@ -5,7 +5,7 @@
         @csrf
         <div class="box mb-0">
             <div class="navbar navbar-expand-lg">
-                <div class="navbar-text nav-title flex" id="pageTitle">Форма редактирования Магазина</div>
+                <div class="navbar-text nav-title flex" id="pageTitle">@if(isset($store))Редактирование {{ $store->name }}@else Создание магазина@endif</div>
                 <ul class="nav flex-row order-lg-2">
                     <li class="nav-item">
                         <button type="submit" href="#" class="btn btn-icon btn-social white" title="Сохранить">

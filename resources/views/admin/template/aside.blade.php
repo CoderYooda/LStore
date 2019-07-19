@@ -37,7 +37,7 @@
                             </a>
                             <ul class="nav-sub">
                                 <li>
-                                    <a href="layout.header.html">
+                                    <a href="{{ route('Products') }}">
                                         <span class="nav-text">Товары</span>
                                     </a>
                                 </li>
@@ -72,18 +72,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('Settings') }}">
-                                <span class="nav-icon"><i class="fa fa-phone-square"></i></span>
-                                <span class="nav-text">Настройки</span>
-                            </a>
-                        </li>
-                        <li>
                             <a>
                                 <span class="nav-caret"><i class="fa fa-caret-down"></i></span>
                                 <span class="nav-icon"><i class="fa fa-align-left"></i></span>
                                 <span class="nav-text">Настройки</span>
                             </a>
                             <ul class="nav-sub">
+                                <li>
+                                    <a href="{{ route('Settings') }}">
+                                        <span class="nav-text">Общие</span>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="{{ route('Store') }}">
                                         <span class="nav-text">Магазины</span>

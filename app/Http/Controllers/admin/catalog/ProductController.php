@@ -11,10 +11,10 @@ use stdClass;
 
 class ProductController extends Controller
 {
-    # Список редактируемых товаров
-    public function getList()
+    # Список товаров
+    public function index()
     {
-        return view('admin.catalog.product.list');
+        return view('admin.catalog.product.index');
     }
 
     # Форма редактирования товара

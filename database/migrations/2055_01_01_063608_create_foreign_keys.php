@@ -16,6 +16,9 @@ class CreateForeignKeys extends Migration
         Schema::table('category_description', function (Blueprint $table) {
             $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
         });
+        Schema::table('store', function (Blueprint $table) {
+            $table->foreign('company_id')->references('id')->on('company')->onDelete('cascade');
+        });
     }
 
     /**

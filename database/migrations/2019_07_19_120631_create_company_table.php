@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStoreTable extends Migration
+class CreateCompanyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateStoreTable extends Migration
      */
     public function up()
     {
-        Schema::create('store', function (Blueprint $table) {
+        Schema::create('company', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->char('name', 64);
-            $table->char('url', 255)->nullable();
-            $table->char('ssl', 255)->nullable();
-            $table->bigInteger('company_id')->unsigned();
+            $table->char('name', 255);
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateStoreTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('store');
+        Schema::dropIfExists('company');
     }
 }

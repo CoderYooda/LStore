@@ -25,12 +25,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['prefix' => '/admin'], function () {
     Route::get('/dashboard', 'admin\common\DashBoardController@index')->name('Dashboard');
 
-    Route::get('/settings', 'admin\setting\SettingController@showSettingPage')->name('Settings');
-
-    Route::get('/catalog/product', 'admin\catalog\ProductController@getList')->name('Products');
+    Route::get('/catalog/product', 'admin\catalog\ProductController@index')->name('Products');
+    Route::get('/catalog/product/add', 'admin\catalog\ProductController@getForm')->name('AddProduct');
     Route::get('/catalog/product/{id}/edit', 'admin\catalog\ProductController@getForm')->name('Product_Edit');
     Route::post('/catalog/product/store', 'admin\catalog\ProductController@store')->name('Product_Store');
 
+    Route::get('/settings/base', 'admin\setting\SettingController@showSettingPage')->name('Settings');
+
     Route::get('/settings/store', 'admin\setting\StoreController@index')->name('Store');
-    Route::get('/settings/store/add', 'admin\setting\StoreController@getForm')->name('AddStore');
+    Route::get('/settings/store/add', 'admin\setting\StoreController@add')->name('AddStore');
+    Route::get('/settings/store/{id}/edit', 'admin\setting\StoreController@edit')->name('EditStore');
 });
