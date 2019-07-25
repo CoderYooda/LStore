@@ -55,13 +55,13 @@ var MODULE_CONFIG = {
                         '/js/modules/jquery.chart.js',
                         '/js/modules/chartjs.js'
                     ],
-    dataTable:      [
+    dataTable:      [ //Ready
                       '/modules/datatables/media/js/jquery.dataTables.min.js',
                       '/modules/datatables.net-bs4/js/dataTables.bootstrap4.js',
                       '/modules/datatables.net-bs4/css/dataTables.bootstrap4.css',
                       '/js/modules/datatable.js'
                     ],
-    bootstrapTable: [
+    bootstrapTable: [ //Ready
                       '/modules/bootstrap-table/dist/bootstrap-table.min.css',
                       '/modules/bootstrap-table/dist/bootstrap-table.min.js',
                       '/modules/bootstrap-table/dist/extensions/export/bootstrap-table-export.min.js',
@@ -120,6 +120,14 @@ var MODULE_CONFIG = {
                         '/modules/node-waves/dist/waves.min.css',
                         '/modules/node-waves/dist/waves.min.js',
                         '/js/modules/waves.js'
+                    ],
+    notie:          [ // Ready
+                        '/modules/notie/dist/notie.min.js',
+                        '/js/modules/notie.js'
+                    ],
+    modal_load:     [ // Ready
+                        '/modules/draggable/dist/draggable.min.js',
+                        '/js/modules/pages/modal.js',
                     ]
   };
 

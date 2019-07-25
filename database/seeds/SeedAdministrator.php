@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\User;
+use App\Model\System\User;
 use Illuminate\Support\Facades\Hash;
 
 class SeedAdministrator extends Seeder

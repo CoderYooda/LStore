@@ -1,7 +1,18 @@
 var app = app || {};
 
+
 (function ($, plugin) {
     'use strict';
+
+    $( document ).ajaxError(function( event, request, settings ) {
+        notie.alert({ type: 'error', text: 'Ошибка ответа сервера' });
+    });
+
+    $( document ).ajaxSuccess(function( event, request, settings ) {
+        if(request.responseJSON.status != 'success'){
+            notie.alert({ type: 'error', text: request.responseJSON.reason });
+        }
+    });
 
     // ie
     if ( !!navigator.userAgent.match(/MSIE/i) || !!navigator.userAgent.match(/Trident.*rv:11\./) ){

@@ -1,114 +1,136 @@
-<div id="aside" class="app-aside fade box-shadow-x white nav-expand white" aria-hidden="true">
-    <div class="sidenav modal-dialog dk white">
-        <!-- sidenav top -->
-        <div class="navbar d-lg-none">
-            <!-- brand -->
-            <a href="index.html" class="navbar-brand">
-                <svg viewBox="0 0 24 24" height="28" width="28" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M19.51 3.08L3.08 19.51c.09.34.27.65.51.9.25.24.56.42.9.51L20.93 4.49c-.19-.69-.73-1.23-1.42-1.41zM11.88 3L3 11.88v2.83L14.71 3h-2.83zM5 3c-1.1 0-2 .9-2 2v2l4-4H5zm14 18c.55 0 1.05-.22 1.41-.59.37-.36.59-.86.59-1.41v-2l-4 4h2zm-9.71 0h2.83L21 12.12V9.29L9.29 21z"
-                          fill="#fff" class="fill-theme" />
-                </svg>
-                <img src="../assets/images/logo.png" alt="." class="hide">
-                <span class="hidden-folded d-inline">Apply</span>
+<div id="aside" class="app-aside fade box-shadow-x white white folded" aria-hidden="true">
+    <div class="sidenav hv">
+        <div class="nav-fold px-2">
+            <a class="d-flex p-2" href="#">
+                <span class="avatar w-40 rounded grey hide">J</span>
+                <img src="/assets/images/a3.jpg" alt="..." class="w-40 circle">
             </a>
-            <!-- / brand -->
+            <div class="hidden-folded flex p-2">
+                <div class="d-flex">
+                    <a href="profile.html" class="mr-auto text-nowrap">
+                        Jean Reyes
+                        <small class="d-block text-muted">UX designer, CA</small>
+                    </a>
+                    <div>
+                        <span class="badge badge-pill info">5</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Flex nav content -->
         <div class="flex hide-scroll">
             <div class="scroll">
-                {!! \App\Http\Controllers\Auth\UserController::asideUserHead() !!}
-                <div class="nav-active-theme" data-nav>
-                    <ul class="nav ">
+                <div class="show-text nav-active-text" data-nav>
+                    <ul class="nav">
                         <li class="nav-header">
-                            <span class="text-xs hidden-folded">Main</span>
+                            <span class="text-xs hidden-folded">Discover</span>
                         </li>
-                        <li>
-                            <a href="{{ route('Dashboard') }}">
-                                <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
-                                <span class="nav-text">Панель состояния</span>
+                        <li class="active">
+                            <a href="{{ route('Products') }}">
+                                                                    <span class="nav-icon">
+					    	          <i class="fa fa-home"></i>
+					    	        </span>
+                                <span class="nav-text">Товары</span>
                             </a>
                         </li>
                         <li>
-                            <a>
-                                <span class="nav-caret"><i class="fa fa-caret-down"></i></span>
-                                <span class="nav-icon"><i class="fa fa-align-left"></i></span>
-                                <span class="nav-text">Каталог</span>
+                            <a href="#">
+                                                                    <span class="nav-caret">
+					    	          <i class="fa fa-caret-down"></i>
+					    	        </span>
+                                <span class="nav-badge">
+					    	          <b class="badge badge-sm badge-pill danger theme">20</b>
+					    	        </span>
+                                <span class="nav-icon">
+					    	          <i class="fa fa-cloud"></i>
+					    	        </span>
+                                <span class="nav-text">Ecommerce</span>
                             </a>
                             <ul class="nav-sub">
                                 <li>
-                                    <a href="{{ route('Products') }}">
-                                        <span class="nav-text">Товары</span>
+                                    <a href="#">
+                                        <span class="nav-text">Products</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="layout.sidenav.html">
-                                        <span class="nav-text">Sidenav</span>
+                                    <a href="#">
+                                        <span class="nav-text">Customers</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="layout.aside.html">
-                                        <span class="nav-text">Aside</span>
+                                    <a href="#">
+                                        <span class="nav-text">Orders</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="layout.flex.html">
-                                        <span class="nav-text">Flex</span>
+                                    <a href="#">
+                                        <span class="nav-text">Shipment</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="app.inbox.html">
-                                <span class="nav-badge"><b class="badge badge-sm badge-pill success">6</b></span>
-                                <span class="nav-icon"><i class="fa fa-envelope"></i></span>
-                                <span class="nav-text">Inbox</span>
+                            <a href="#">
+                                                                    <span class="nav-icon">
+					    	          <i class="fa fa-inbox"></i>
+					    	        </span>
+                                <span class="nav-text">Mail</span>
                             </a>
                         </li>
                         <li>
-                            <a href="app.message.html">
-                                <span class="nav-icon"><i class="fa fa-comment"></i></span>
-                                <span class="nav-text">Messages</span>
+                            <a href="#">
+                                                                    <span class="nav-badge">
+					    	          <b class="badge badge-sm badge-pill danger">6</b>
+					    	        </span>
+                                <span class="nav-icon">
+					    	          <i class="fa fa-database"></i>
+					    	        </span>
+                                <span class="nav-text">Projects</span>
                             </a>
                         </li>
                         <li>
-                            <a>
-                                <span class="nav-caret"><i class="fa fa-caret-down"></i></span>
-                                <span class="nav-icon"><i class="fa fa-align-left"></i></span>
-                                <span class="nav-text">Настройки</span>
+                            <a href="#">
+                                                                    <span class="nav-icon">
+					    	          <i class="fa fa-pie-chart"></i>
+					    	        </span>
+                                <span class="nav-text">Sales</span>
                             </a>
-                            <ul class="nav-sub">
-                                <li>
-                                    <a href="{{ route('Settings') }}">
-                                        <span class="nav-text">Общие</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('Store') }}">
-                                        <span class="nav-text">Магазины</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="layout.sidenav.html">
-                                        <span class="nav-text">Sidenav</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="layout.aside.html">
-                                        <span class="nav-text">Aside</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="layout.flex.html">
-                                        <span class="nav-text">Flex</span>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="pb-2 hidden-folded"></li>
+                        <li class="nav-header hidden-folded">
+                            <span class="text-xs">Your collection</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                                                    <span class="nav-icon">
+					    	          <i class="fa fa-history"></i>
+					    	        </span>
+                                <span class="nav-text">Tasks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                                                    <span class="nav-icon">
+					    	          <i class="fa fa-calendar"></i>
+					    	        </span>
+                                <span class="nav-text">Calendar</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <!-- sidenav bottom -->
+        <div class="py-2 mt-2 b-t no-shrink">
+            <ul class="nav no-border">
+                <li>
+                    <a href="#">
+                                                            <span class="nav-icon">
+							          <i class="fa fa-power-off"></i>
+							        </span>
+                        <span class="nav-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

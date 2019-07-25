@@ -11,6 +11,7 @@
     "/css/admin/theme/warn.css": "/css/admin/theme/warn.css",
     "/css/admin/theme/warning.css": "/css/admin/theme/warning.css",
     "/js/modules/chartjs.js": "/js/modules/chartjs.js",
+    "/js/modules/datatable.js": "/js/modules/datatable.js",
     "/js/modules/datepicker.js": "/js/modules/datepicker.js",
     "/js/modules/datetimepicker.js": "/js/modules/datetimepicker.js",
     "/js/modules/fullcalendar.js": "/js/modules/fullcalendar.js",
@@ -21,11 +22,13 @@
     "/js/modules/jquery.scrollreveal.js": "/js/modules/jquery.scrollreveal.js",
     "/js/modules/jqvmap.js": "/js/modules/jqvmap.js",
     "/js/modules/notie.js": "/js/modules/notie.js",
+    "/js/modules/pages/modal.js": "/js/modules/pages/modal.js",
     "/js/modules/select2.js": "/js/modules/select2.js",
     "/js/modules/sortable.js": "/js/modules/sortable.js",
     "/js/modules/tableExport.min.js": "/js/modules/tableExport.min.js",
     "/js/modules/waves.js": "/js/modules/waves.js",
     "/js/admin/core.js": "/js/admin/core.js",
     "/js/admin/app.js": "/js/admin/app.js",
+    "/modules/datatables.net-bs4": "/modules/datatables.net-bs4",
     "/modules/chart.js": "/modules/chart.js"
 }

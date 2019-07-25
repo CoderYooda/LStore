@@ -7,6 +7,8 @@
       $(document).trigger('pjaxSend');
     });
 
+
+
     $(document).on('pjaxSend', function(){
       // close the aside on mobile
       $('#aside').modal('hide');
