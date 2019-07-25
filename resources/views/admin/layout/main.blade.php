@@ -22,7 +22,7 @@
         </div>
     </div>
 </div>
-{{--@include('admin.support.switcher')--}}
+@include('admin.support.switcher')
 @include('admin.support.modal')
 
 

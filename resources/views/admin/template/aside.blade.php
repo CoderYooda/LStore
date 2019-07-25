@@ -1,5 +1,5 @@
 <div id="aside" class="app-aside fade box-shadow-x white white folded" aria-hidden="true">
-    <div class="sidenav hv">
+    <div class="sidenav">
         <div class="nav-fold px-2">
             <a class="d-flex p-2" href="#">
                 <span class="avatar w-40 rounded grey hide">J</span>

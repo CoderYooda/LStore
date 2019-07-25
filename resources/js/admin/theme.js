@@ -8,15 +8,15 @@
         warn: '#907eec'
       },
       setting: {
-        ajax: true,
-        folded: false,
+        ajax: false,
+        folded: true,
         container: false,
         theme: 'primary',
         aside: 'dark',
         brand: 'dark',
         header: 'white',
         fixedContent: false,
-        fixedAside: false,
+        fixedAside: true,
         bg: ''
       }
     };

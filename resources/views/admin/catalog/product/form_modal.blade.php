@@ -1,5 +1,5 @@
 <div id="add_product" class="" data-backdrop="static">
-    <div class="modal-dialog animate" id="animate" style="z-index: 1050;">
+    <div class="modal-dialog animate" id="animate" style="z-index: 1041;">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Новая номенклатура</h5>

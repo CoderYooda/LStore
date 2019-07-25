@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "jquery-fullscreen-plugin@1.0.0",
+      "C:\\OSPanel\\domains\\LStore"
+    ]
+  ],
+  "_from": "jquery-fullscreen-plugin@1.0.0",
+  "_id": "jquery-fullscreen-plugin@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-Qai5vWwf3B71+kFo/DE5CERfPUY=",
+  "_location": "/jquery-fullscreen-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jquery-fullscreen-plugin@1.0.0",
+    "name": "jquery-fullscreen-plugin",
+    "escapedName": "jquery-fullscreen-plugin",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-fullscreen-plugin/-/jquery-fullscreen-plugin-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "C:\\OSPanel\\domains\\LStore",
+  "author": {
+    "name": "Stefan Kecskes",
+    "email": "mr.kecskes@gmail.com",
+    "url": "https://skey.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/kayahr/jquery-fullscreen-plugin/issues"
+  },
+  "description": "This jQuery plugin provides a simple to use mechanism to control the new fullscreen mode of modern browsers",
+  "homepage": "https://github.com/kayahr/jquery-fullscreen-plugin#readme",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "fullscreen",
+    "ui",
+    "webkit",
+    "chrome",
+    "safari",
+    "opera",
+    "IE",
+    "edge",
+    "firefox"
+  ],
+  "license": "MIT",
+  "main": "jquery.fullscreen-min.js",
+  "name": "jquery-fullscreen-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayahr/jquery-fullscreen-plugin.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
