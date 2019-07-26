@@ -7,7 +7,11 @@
       $(document).trigger('pjaxSend');
     });
 
-
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
 
     $(document).on('pjaxSend', function(){
       // close the aside on mobile

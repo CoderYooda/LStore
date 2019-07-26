@@ -31,7 +31,7 @@ Route::group(['prefix' => '/admin'], function () {
     Route::get('/catalog/product/add_modal', 'admin\catalog\ProductController@getFormModal')->name('AddProductModal');
 
     Route::get('/catalog/product/{id}/edit', 'admin\catalog\ProductController@getForm')->name('Product_Edit');
-    Route::post('/catalog/product/store', 'admin\catalog\ProductController@store')->name('Product_Store');
+    Route::post('/catalog/product/store', 'admin\catalog\ProductController@store')->name('ProductStore');
 
     Route::get('/settings/base', 'admin\setting\SettingController@showSettingPage')->name('Settings');
 

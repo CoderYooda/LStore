@@ -8,6 +8,7 @@ use App\Model\Catalog\Supplier;
 use App\Model\Localisation\Language;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Catalog\ProductDescription;
 use stdClass;
 
 class ProductController extends Controller
@@ -35,6 +36,8 @@ class ProductController extends Controller
     # Сохранить форму с товаром в базу
     public function store(Request $request)
     {
+
+
         dd($request);
     }
 
@@ -42,9 +45,7 @@ class ProductController extends Controller
     private static function collectProductParams()
     {
         $collection = new stdClass();
-        $collection->languages = Language::all();
         $collection->suppliers = Supplier::all();
-        $collection->manufacturers = Manufacturer::all();
         $collection->categories = Category::with('description')->get();
         return $collection;
     }
