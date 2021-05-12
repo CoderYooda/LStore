@@ -15,7 +15,7 @@
         "bootstrap": "^4.3.1",
         "bootstrap-datepicker": "^1.7.1",
         "bootstrap-table": "^1.12.1",
-        "chart.js": "^2.7.2",
+        "chart.js": "^2.9.4",
         "datatables": "^1.10.13",
         "datatables.net-bs4": "^1.10.16",
         "daterangepicker": "^3.0.2",
